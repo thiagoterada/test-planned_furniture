@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -185,6 +186,38 @@ namespace Etec.MoveisPlanejados.UI
             txtDesc.Clear();
             txtPreco.Clear();
             txtDtEntrega.Clear();
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            int cont = dgvProjetos.RowCount;
+            for (int i = 0; i < cont; i++)
+            {
+                for (int a = 0; a < dgvProjetos.Rows[i].Cells.Count; a++)
+                {
+                    if (dgvProjetos.Rows[i].Selected == true || dgvProjetos.Rows[i].Cells[a].Selected == true)
+                    {
+                        txtNome.Text = dgvProjetos.Rows[i].Cells[3].Value.ToString();
+                        txtIdMovel.Text = dgvProjetos.Rows[i].Cells[1].Value.ToString();
+                        txtIdCli.Text = dgvProjetos.Rows[i].Cells[2].Value.ToString();
+                        txtPreco.Text = dgvProjetos.Rows[i].Cells[5].Value.ToString();
+                        txtDesc.Text = dgvProjetos.Rows[i].Cells[4].Value.ToString();
+                        txtDtEntrega.Text = dgvProjetos.Rows[i].Cells[7].Value.ToString();
+                    }
+
+                }
+            }
+            if (Directory.Exists(@"C:\Cadastros") == false)
+            {
+                Directory.CreateDirectory(@"C:\Cadastros");
+            }
+            using (StreamWriter arquivoTexto = new StreamWriter(@"C:\Cadastros\Moveis.txt", true))
+            {
+                arquivoTexto.WriteLine("-- Iniciando Log -- ");
+                arquivoTexto.WriteLine("Usuário efetuou uma consulta de projetos!");
+                arquivoTexto.WriteLine("-- Término Log --");
+                arquivoTexto.WriteLine(" ");
+            }
         }
     }
 }
