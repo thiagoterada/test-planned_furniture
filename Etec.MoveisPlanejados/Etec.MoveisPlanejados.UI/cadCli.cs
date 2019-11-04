@@ -19,8 +19,15 @@ namespace Etec.MoveisPlanejados.UI
 
         private void cadCli_Load(object sender, EventArgs e)
         {
-            DAO.Banco dao = new DAO.Banco();
-            dgvClientes.DataSource = dao.retornarCliente();
+            try
+            {
+                DAO.Banco dao = new DAO.Banco();
+                dgvClientes.DataSource = dao.retornarCliente();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Não foi possível conectar com o servidor! Erro: " + erro.Message, "Moveis Planejados");
+            }
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -33,7 +40,7 @@ namespace Etec.MoveisPlanejados.UI
             }
             catch(Exception erro)
             {
-                MessageBox.Show(erro.Message);
+                MessageBox.Show("Não foi possível efetuar o cadastro! Erro: " + erro.Message, "Moveis Planejados");
             }
 
         }

@@ -61,7 +61,7 @@ namespace Etec.MoveisPlanejados.UI.DAO
             MySqlConnection msc = new MySqlConnection();
             msc.ConnectionString = "server= localhost;user id=root; password=''; database=loja_moveis;";
             msc.Open();
-            MySqlDataAdapter msda = new MySqlDataAdapter("select*from TIPO_MOVEL", msc);
+            MySqlDataAdapter msda = new MySqlDataAdapter("select*from PROJETO", msc);
             DataSet ds = new DataSet();
             msda.Fill(ds);
             msc.Close();
