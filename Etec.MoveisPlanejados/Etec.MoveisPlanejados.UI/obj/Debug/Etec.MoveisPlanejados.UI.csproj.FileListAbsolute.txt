@@ -11,3 +11,9 @@ c:\users\aluno\documents\visual studio 2015\Projects\Etec.MoveisPlanejados\Etec.
 c:\users\aluno\documents\visual studio 2015\Projects\Etec.MoveisPlanejados\Etec.MoveisPlanejados.UI\obj\Debug\Etec.MoveisPlanejados.UI.cadCli.resources
 c:\users\aluno\documents\visual studio 2015\Projects\Etec.MoveisPlanejados\Etec.MoveisPlanejados.UI\obj\Debug\Etec.MoveisPlanejados.UI.cadTipoMovel.resources
 c:\users\aluno\documents\visual studio 2015\Projects\Etec.MoveisPlanejados\Etec.MoveisPlanejados.UI\obj\Debug\Etec.MoveisPlanejados.UI.cadProj.resources
+G:\ETEC - TDS\2° Módulo\DS\PROVA 05-04\Final\Etec.MoveisPlanejados\Etec.MoveisPlanejados.UI\bin\Debug\Etec.MoveisPlanejados.UI.exe.config
+G:\ETEC - TDS\2° Módulo\DS\PROVA 05-04\Final\Etec.MoveisPlanejados\Etec.MoveisPlanejados.UI\obj\Debug\Etec.MoveisPlanejados.UI.exe
+G:\ETEC - TDS\2° Módulo\DS\PROVA 05-04\Final\Etec.MoveisPlanejados\Etec.MoveisPlanejados.UI\obj\Debug\Etec.MoveisPlanejados.UI.pdb
+F:\ETEC - TDS\2° Módulo\DS\PROVA MÓVEIS PLANEJADOS 05-04\Final\Etec.MoveisPlanejados\Etec.MoveisPlanejados.UI\bin\Debug\Etec.MoveisPlanejados.UI.exe.config
+F:\ETEC - TDS\2° Módulo\DS\PROVA MÓVEIS PLANEJADOS 05-04\Final\Etec.MoveisPlanejados\Etec.MoveisPlanejados.UI\obj\Debug\Etec.MoveisPlanejados.UI.exe
+F:\ETEC - TDS\2° Módulo\DS\PROVA MÓVEIS PLANEJADOS 05-04\Final\Etec.MoveisPlanejados\Etec.MoveisPlanejados.UI\obj\Debug\Etec.MoveisPlanejados.UI.pdb

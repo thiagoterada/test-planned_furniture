@@ -102,16 +102,30 @@ namespace Etec.MoveisPlanejados.UI
 
         private void cadProj_Load(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 DAO.Banco dao = new DAO.Banco();
                 dgvProjetos.DataSource = dao.retornarProjeto();
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show("Não foi possível conectar com o servidor! Erro: " + erro.Message, "Moveis Planejados");
-            }
-        }
+                dgvClientes.DataSource = dao.retornarCliente();
+                dgvTipoMov.DataSource = dao.retornarTipoMovel();
+                int cont = dgvClientes.RowCount - 1;
+                int cont1 = dgvTipoMov.RowCount - 1;
+                for (int i = 0; i < cont; i++)
+                {
+                        listBox1.Items.Add(dgvClientes.Rows[i].Cells[0].Value.ToString() + " - " + dgvClientes.Rows[i].Cells[1].Value.ToString());
+
+                }
+                for (int i = 0; i < cont1; i++)
+                {
+                       listBox2.Items.Add(dgvTipoMov.Rows[i].Cells[0].Value.ToString() +" - "+ dgvTipoMov.Rows[i].Cells[1].Value.ToString());
+
+                }
+            //}
+            //catch (Exception erro)
+            //{
+            //    MessageBox.Show("Não foi possível conectar com o servidor! Erro: " + erro.Message, "Moveis Planejados");
+            //}
+}
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {

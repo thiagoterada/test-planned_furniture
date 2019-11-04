@@ -77,7 +77,7 @@ namespace Etec.MoveisPlanejados.UI
                     if (dgvTipoMov.Rows[i].Selected == true || dgvTipoMov.Rows[i].Cells[a].Selected == true)
                     {
                         txtNome.Text = dgvTipoMov.Rows[i].Cells[1].Value.ToString();
-                        txtDesc.Text = dgvTipoMov.Rows[i].Cells[1].Value.ToString();
+                        txtDesc.Text = dgvTipoMov.Rows[i].Cells[2].Value.ToString();
                     }
 
                 }
