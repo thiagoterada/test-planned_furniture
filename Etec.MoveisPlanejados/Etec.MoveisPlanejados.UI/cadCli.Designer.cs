@@ -57,6 +57,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.cboSexo = new System.Windows.Forms.ComboBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +76,7 @@
             this.btnCadastrar.Location = new System.Drawing.Point(17, 373);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(221, 23);
-            this.btnCadastrar.TabIndex = 1;
+            this.btnCadastrar.TabIndex = 14;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -94,14 +95,14 @@
             this.txtNome.Location = new System.Drawing.Point(17, 63);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(221, 20);
-            this.txtNome.TabIndex = 4;
+            this.txtNome.TabIndex = 1;
             // 
             // txtCPF
             // 
             this.txtCPF.Location = new System.Drawing.Point(17, 106);
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(100, 20);
-            this.txtCPF.TabIndex = 6;
+            this.txtCPF.TabIndex = 2;
             // 
             // label3
             // 
@@ -126,7 +127,7 @@
             this.txtCel.Location = new System.Drawing.Point(17, 200);
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(100, 20);
-            this.txtCel.TabIndex = 10;
+            this.txtCel.TabIndex = 6;
             // 
             // lblCel
             // 
@@ -142,7 +143,7 @@
             this.txtCid.Location = new System.Drawing.Point(17, 250);
             this.txtCid.Name = "txtCid";
             this.txtCid.Size = new System.Drawing.Size(100, 20);
-            this.txtCid.TabIndex = 12;
+            this.txtCid.TabIndex = 8;
             // 
             // lblCid
             // 
@@ -158,7 +159,7 @@
             this.txtLogra.Location = new System.Drawing.Point(17, 299);
             this.txtLogra.Name = "txtLogra";
             this.txtLogra.Size = new System.Drawing.Size(100, 20);
-            this.txtLogra.TabIndex = 14;
+            this.txtLogra.TabIndex = 10;
             // 
             // lblLogra
             // 
@@ -174,7 +175,7 @@
             this.txtCep.Location = new System.Drawing.Point(17, 344);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(100, 20);
-            this.txtCep.TabIndex = 16;
+            this.txtCep.TabIndex = 12;
             // 
             // lblCep
             // 
@@ -190,7 +191,7 @@
             this.txtTel.Location = new System.Drawing.Point(138, 155);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(100, 20);
-            this.txtTel.TabIndex = 18;
+            this.txtTel.TabIndex = 5;
             // 
             // lblTel
             // 
@@ -206,7 +207,7 @@
             this.txtUF.Location = new System.Drawing.Point(138, 203);
             this.txtUF.Name = "txtUF";
             this.txtUF.Size = new System.Drawing.Size(100, 20);
-            this.txtUF.TabIndex = 20;
+            this.txtUF.TabIndex = 7;
             // 
             // lblUF
             // 
@@ -222,7 +223,7 @@
             this.txtBairro.Location = new System.Drawing.Point(138, 250);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(100, 20);
-            this.txtBairro.TabIndex = 22;
+            this.txtBairro.TabIndex = 9;
             // 
             // lblBairro
             // 
@@ -238,7 +239,7 @@
             this.txtNum.Location = new System.Drawing.Point(138, 299);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(100, 20);
-            this.txtNum.TabIndex = 24;
+            this.txtNum.TabIndex = 11;
             // 
             // lblNum
             // 
@@ -254,7 +255,7 @@
             this.txtCompl.Location = new System.Drawing.Point(138, 344);
             this.txtCompl.Name = "txtCompl";
             this.txtCompl.Size = new System.Drawing.Size(100, 20);
-            this.txtCompl.TabIndex = 26;
+            this.txtCompl.TabIndex = 13;
             // 
             // lblCompl
             // 
@@ -270,7 +271,7 @@
             this.txtRG.Location = new System.Drawing.Point(138, 106);
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(100, 20);
-            this.txtRG.TabIndex = 28;
+            this.txtRG.TabIndex = 3;
             // 
             // label14
             // 
@@ -286,7 +287,7 @@
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Location = new System.Drawing.Point(266, 12);
             this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.Size = new System.Drawing.Size(320, 383);
+            this.dgvClientes.Size = new System.Drawing.Size(320, 352);
             this.dgvClientes.TabIndex = 29;
             // 
             // cboSexo
@@ -299,13 +300,23 @@
             this.cboSexo.Location = new System.Drawing.Point(17, 155);
             this.cboSexo.Name = "cboSexo";
             this.cboSexo.Size = new System.Drawing.Size(100, 21);
-            this.cboSexo.TabIndex = 30;
+            this.cboSexo.TabIndex = 4;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(266, 373);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(320, 23);
+            this.btnConsultar.TabIndex = 30;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
             // 
             // cadCli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 413);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.cboSexo);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.txtRG);
@@ -375,5 +386,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridView dgvClientes;
         private System.Windows.Forms.ComboBox cboSexo;
+        private System.Windows.Forms.Button btnConsultar;
     }
 }

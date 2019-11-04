@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.dgvTipoMov = new System.Windows.Forms.DataGridView();
+            this.btnConsultar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoMov)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,9 +77,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Descrição*:";
+            this.label3.Text = "Descrição:";
             // 
             // btnCadastrar
             // 
@@ -95,14 +96,24 @@
             this.dgvTipoMov.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTipoMov.Location = new System.Drawing.Point(311, 12);
             this.dgvTipoMov.Name = "dgvTipoMov";
-            this.dgvTipoMov.Size = new System.Drawing.Size(240, 138);
+            this.dgvTipoMov.Size = new System.Drawing.Size(240, 109);
             this.dgvTipoMov.TabIndex = 11;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(311, 127);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(240, 23);
+            this.btnConsultar.TabIndex = 12;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
             // 
             // cadTipoMovel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 166);
+            this.ClientSize = new System.Drawing.Size(563, 166);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.dgvTipoMov);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtDesc);
@@ -128,5 +139,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.DataGridView dgvTipoMov;
+        private System.Windows.Forms.Button btnConsultar;
     }
 }

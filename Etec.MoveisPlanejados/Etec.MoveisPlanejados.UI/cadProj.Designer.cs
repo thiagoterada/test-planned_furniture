@@ -43,6 +43,7 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.txtDesc = new System.Windows.Forms.TextBox();
             this.dgvProjetos = new System.Windows.Forms.DataGridView();
+            this.btnConsultar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProjetos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             this.txtIdCli.Location = new System.Drawing.Point(133, 102);
             this.txtIdCli.Name = "txtIdCli";
             this.txtIdCli.Size = new System.Drawing.Size(100, 20);
-            this.txtIdCli.TabIndex = 44;
+            this.txtIdCli.TabIndex = 3;
             // 
             // label14
             // 
@@ -67,7 +68,7 @@
             this.txtDtEntrega.Location = new System.Drawing.Point(133, 199);
             this.txtDtEntrega.Name = "txtDtEntrega";
             this.txtDtEntrega.Size = new System.Drawing.Size(100, 20);
-            this.txtDtEntrega.TabIndex = 42;
+            this.txtDtEntrega.TabIndex = 6;
             // 
             // txtUF
             // 
@@ -83,16 +84,16 @@
             this.txtPreco.Location = new System.Drawing.Point(12, 196);
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(100, 20);
-            this.txtPreco.TabIndex = 38;
+            this.txtPreco.TabIndex = 5;
             // 
             // txtCel
             // 
             this.txtCel.AutoSize = true;
             this.txtCel.Location = new System.Drawing.Point(9, 179);
             this.txtCel.Name = "txtCel";
-            this.txtCel.Size = new System.Drawing.Size(38, 13);
+            this.txtCel.Size = new System.Drawing.Size(42, 13);
             this.txtCel.TabIndex = 37;
-            this.txtCel.Text = "Preço:";
+            this.txtCel.Text = "Preço*:";
             // 
             // txtSexo
             // 
@@ -108,7 +109,7 @@
             this.txtIdMovel.Location = new System.Drawing.Point(12, 102);
             this.txtIdMovel.Name = "txtIdMovel";
             this.txtIdMovel.Size = new System.Drawing.Size(100, 20);
-            this.txtIdMovel.TabIndex = 35;
+            this.txtIdMovel.TabIndex = 2;
             // 
             // label3
             // 
@@ -124,7 +125,7 @@
             this.txtNome.Location = new System.Drawing.Point(12, 59);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(221, 20);
-            this.txtNome.TabIndex = 33;
+            this.txtNome.TabIndex = 1;
             // 
             // label2
             // 
@@ -150,7 +151,7 @@
             this.btnCadastrar.Location = new System.Drawing.Point(12, 226);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(221, 23);
-            this.btnCadastrar.TabIndex = 46;
+            this.btnCadastrar.TabIndex = 7;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -160,21 +161,31 @@
             this.txtDesc.Location = new System.Drawing.Point(12, 151);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(221, 20);
-            this.txtDesc.TabIndex = 47;
+            this.txtDesc.TabIndex = 4;
             // 
             // dgvProjetos
             // 
             this.dgvProjetos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProjetos.Location = new System.Drawing.Point(255, 12);
             this.dgvProjetos.Name = "dgvProjetos";
-            this.dgvProjetos.Size = new System.Drawing.Size(213, 237);
+            this.dgvProjetos.Size = new System.Drawing.Size(213, 207);
             this.dgvProjetos.TabIndex = 48;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(255, 226);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(213, 23);
+            this.btnConsultar.TabIndex = 49;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
             // 
             // cadProj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 261);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.dgvProjetos);
             this.Controls.Add(this.txtDesc);
             this.Controls.Add(this.btnCadastrar);
@@ -215,5 +226,6 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.TextBox txtDesc;
         private System.Windows.Forms.DataGridView dgvProjetos;
+        private System.Windows.Forms.Button btnConsultar;
     }
 }

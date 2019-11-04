@@ -17,6 +17,19 @@ namespace Etec.MoveisPlanejados.UI
             InitializeComponent();
         }
 
+        private bool ValidarCampoString(string campoValidar, string nomeCampo)
+        {
+            if (campoValidar == "")
+            {
+                MessageBox.Show("Campo " + nomeCampo + " Inválido!", "Moveis Planejados");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
         private void cadTipoMovel_Load(object sender, EventArgs e)
         {
             try
@@ -32,6 +45,13 @@ namespace Etec.MoveisPlanejados.UI
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            if (ValidarCampoString(txtNome.Text, "Nome") == false)
+            {
+                txtNome.Clear();
+                txtNome.Focus();
+                return;
+            }
+
             try
             {
                 DAO.Banco dao = new DAO.Banco();
@@ -42,6 +62,8 @@ namespace Etec.MoveisPlanejados.UI
             {
                 MessageBox.Show("Não foi possível efetuar o cadastro! Erro: " + erro.Message, "Moveis Planejados");
             }
+            txtDesc.Clear();
+            txtNome.Clear();
         }
     }
 }
